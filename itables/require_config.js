@@ -5,6 +5,7 @@ if (typeof require !== 'undefined')
             datatables: 'https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min',
         }
     });
+console.log("Set New Table creation Hook");
 var jq = "jquery";
 var dt = "datatables";
 require([jq], function(jqr){
