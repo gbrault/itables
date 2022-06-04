@@ -5,3 +5,7 @@ if (typeof require !== 'undefined')
             datatables: 'https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min',
         }
     });
+$(document).on( 'init.dt', function ( e, settings ) {
+    var api = new $.fn.dataTable.Api( settings );
+    console.log( 'New DataTable created:', api.table().node() );
+} );
