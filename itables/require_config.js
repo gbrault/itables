@@ -12,7 +12,7 @@ require([jq], function(jqr){
     require([dt], function(dtr){
         jqr(document).on( 'init.dt', function ( e, settings ) {
                     var api = new jqr.fn.dataTable.Api( settings );
-                    console.log( 'New DataTable created:', api.table().node() );
+                    console.log( 'Settings:',settings,'\nNew DataTable created:', api.table().node() );
         } );
     });
 });
